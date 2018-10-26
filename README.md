@@ -1,2 +1,2 @@
 # blockchain-IoT-PoC
-A proof of conept python implementation of a blockchain utlizing the PBFT consensus algorithm for IoT configuration updating
+A proof of concept python implementation of a blockchain utlizing the PBFT consensus algorithm. This specific implementation was designed for IoT configuration updating.
