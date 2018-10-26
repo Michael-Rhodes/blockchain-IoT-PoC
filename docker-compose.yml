@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  node1:
+    build: .
+    hostname: node1
+    ports:
+      - "5001:5000"
+  node2:
+    build: .
+    hostname: node2
+    ports:
+      - "5002:5000"
+  node3:
+    build: .
+    hostname: node3
+    ports:
+      - "5003:5000"
+  node4:
+    build: .
+    hostname: node4
+    ports:
+      - "5004:5000"
