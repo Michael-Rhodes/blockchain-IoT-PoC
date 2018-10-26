@@ -54,6 +54,7 @@ print ('    ',res.data)
 
 
 # validate new config (this will add a new block to the chain)
+sleep(1)
 configHash = getConfigHash()
 data = { "hash": configHash }
 data= json.dumps(data).encode('utf-8')
@@ -63,6 +64,7 @@ print ('    ',res.data)
 
 
 # validate same config (no new block will be added)
+sleep(1)
 dummyFileIndex=1
 configHash = getConfigHash()
 data = { "hash": configHash }
@@ -73,7 +75,7 @@ print ('    ',res.data)
 
 
 # try to validate an invalid hash
-sleep(5)
+sleep(1)
 data = { "hash": "2" }
 getConfigHash()		# keeps dummyFileIndex in sync with the blockchain
 data= json.dumps(data).encode('utf-8')
